@@ -82,34 +82,26 @@ This enforces a clear separation between:
 
 ### Interest Accrual
 
-\[
-I_g = P \cdot r \cdot \frac{t}{365}
-\]
+Ig = P × r × (t / 365)
+
+Where:
+- P = principal  
+- r = annual rate  
+- t = elapsed days  
 
 ---
 
-### Early Withdrawal Payoff
+### Early Withdrawal
 
-\[
-\text{Penalty} = \min(I_g \cdot b,\; I_g)
-\]
+Penalty = min(Ig × b, Ig)
 
-\[
-\text{Taxable Interest} = I_g - \text{Penalty}
-\]
+Taxable Interest = Ig - Penalty
 
-\[
-T = \text{Taxable Interest} \cdot \tau
-\]
+Tax = Taxable Interest × τ
 
-\[
-I_n = \text{Taxable Interest} - T
-\]
+Net Interest = Taxable Interest - Tax
 
-\[
-\text{Break Value} = P + I_n
-\]
-
+Break Value = P + Net Interest
 ---
 
 ## System Implementation
